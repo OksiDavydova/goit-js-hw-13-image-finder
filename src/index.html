@@ -10,12 +10,32 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../node_modules/basiclightbox/dist/basicLightbox.min.css">
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-  
+    <form class="search-form" id="search-form">
+      <input
+      class="search-form__input"
+        type="text"
+        name="query"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="btn js-btn-reset" type="reset"> Reset</button>
+    </form>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <ul class="gallery">
+     
+    </ul>
+    <button class="btn btn-more">Load more</button>
+
+   
+
     <script src="./index.js"></script>
   </body>
 </html>
